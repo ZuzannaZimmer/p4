@@ -1,3 +1,19 @@
+const getCurrentOffer = () => {
+    return fetch("/api/current-offer")
+        .then(response => response.json());
+}
+
+const refreshOffer = (offer) => {
+    const offerTotalEl = document.querySelector("#offerTotal");
+    const offerItemsCountEl = document.querySelector("#offerItemsCount");
+
+    offerTotalEl.textContent = offer.total;
+    offerItemsCountEl.textContent = offer.itemsCount;
+
+
+}
+
+
 const getProducts = () => {
     return fetch("/api/products")
         .then(response => response.json());
@@ -25,4 +41,6 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(productAsHtml => {
             productAsHtml.forEach(el => productsListEl.appendChild(el))
         });
+    getCurrentOffer()
+        .then(offer => refreshOffer(offer));
 });
