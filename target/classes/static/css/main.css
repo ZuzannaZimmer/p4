@@ -1,0 +1,56 @@
+body {
+    background-color: #1d1e22;
+    color: white;
+}
+.welcome {
+    text-align: center;
+    font-size: 50px;
+
+}
+
+.offer{
+    text-align: center;
+}
+
+
+.productsList {
+    display: flex;
+    justify-content: space-around;
+}
+input{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2px;
+    padding: 8px 16px;
+    width: 30%;
+    height: 7%;
+    background: #FFFFFF;
+    border: 2px solid #1B1B1B;
+    box-sizing: border-box;
+    border-radius: 16px;
+}
+label{
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#buy {
+    background-color: #5e5949;
+    border: 2px solid #1B1B1B;
+    box-sizing: border-box;
+    border-radius: 16px;
+    padding: 16px 32px 16px 16px;
+
+    text-align: center;
+    font-weight: 400;
+
+    /*flex-direction: row;*/
+    color: white;
+    cursor: pointer;
+
+    display: inline-block;
+    margin: 0 auto;
+}
