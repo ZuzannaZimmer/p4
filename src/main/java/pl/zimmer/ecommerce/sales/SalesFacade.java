@@ -2,7 +2,7 @@ package pl.zimmer.ecommerce.sales;
 
 import pl.zimmer.ecommerce.sales.cart.Cart;
 import pl.zimmer.ecommerce.sales.cart.CartStorage;
-import pl.zimmer.ecommerce.sales.payment.PaymentDatails;
+import pl.zimmer.ecommerce.sales.payment.PaymentDetails;
 import pl.zimmer.ecommerce.sales.payment.PaymentGateway;
 import pl.zimmer.ecommerce.sales.payment.RegisterPaymentRequest;
 import pl.zimmer.ecommerce.sales.reservation.AcceptOfferRequest;
@@ -38,17 +38,22 @@ public class SalesFacade {
     }
 
     public void addProductToCart(String customerId, String productId) {
-        Cart cart = cartStorage.loadForCustomer(customerId)
-                .orElse(Cart.empty());
+        Cart cart = loadCartForCustomer(customerId);
 
         cart.addProduct(productId);
+
+        cartStorage.save(customerId, cart);
     }
+private Cart loadCartForCustomer(String customerId){
+        return cartStorage.loadForCustomer(customerId)
+                .orElse(Cart.empty());
+}
 
     public ReservationDetails acceptOffer(String customerId, AcceptOfferRequest acceptOfferRequest) {
         String reservationId = UUID.randomUUID().toString();
         Offer offer = this.getCurrentOffer(customerId);
 
-        PaymentDatails paymentDatails = paymentGateway.registerPayment(
+        PaymentDetails paymentDetails = paymentGateway.registerPayment(
                 RegisterPaymentRequest.of(reservationId, acceptOfferRequest, offer.getTotal())
         );
 
@@ -57,10 +62,10 @@ public class SalesFacade {
                 customerId,
                 acceptOfferRequest,
                 offer,
-                paymentDatails);
+                paymentDetails);
 
         reservationRepository.add(reservation);
 
-        return new ReservationDetails(reservationId, paymentDatails.getPaymentUrl());
+        return new ReservationDetails(reservationId, paymentDetails.getPaymentUrl());
     }
 }

@@ -30,48 +30,52 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JUnit.CartTest.cartConsiderSameProductAsSingleItem.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CartTest.cartConsiderSameProductAsSingleItemS2.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CartTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CartTest.exposeProductQuantityWithCartLineS3.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CartTest.newCartIsEmpty.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CartTest.notEmptyWhenProductAdded.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.OfferAcceptanceTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.OfferAcceptanceTest.itAllowsToAcceptAnOffer.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.OfferCalculatorTest.everyThirdProductIsFree.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.OfferCalculatorTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.OfferCalculatorTest.zeroOfferForEmptyItems.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SalesHttpTest.itAllowsToAcceptOfferHappyPath.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SalesTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SalesTest.itAddsProductToCart.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SalesTest.itShowsCurrentOffer.executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.App.executor&quot;: &quot;Run&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/admin/Desktop/projekt aktualny&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.build.tools.auto.reload&quot;: &quot;ALL&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;build.tools&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.CartTest.cartConsiderSameProductAsSingleItem.executor": "Run",
+    "JUnit.CartTest.cartConsiderSameProductAsSingleItemS2.executor": "Run",
+    "JUnit.CartTest.executor": "Run",
+    "JUnit.CartTest.exposeProductQuantityWithCartLineS3.executor": "Run",
+    "JUnit.CartTest.newCartIsEmpty.executor": "Run",
+    "JUnit.CartTest.notEmptyWhenProductAdded.executor": "Run",
+    "JUnit.OfferAcceptanceTest.executor": "Run",
+    "JUnit.OfferAcceptanceTest.itAllowsToAcceptAnOffer.executor": "Run",
+    "JUnit.OfferCalculatorTest.everyThirdProductIsFree.executor": "Run",
+    "JUnit.OfferCalculatorTest.executor": "Run",
+    "JUnit.OfferCalculatorTest.zeroOfferForEmptyItems.executor": "Run",
+    "JUnit.SalesHttpTest.itAllowsToAcceptOfferHappyPath.executor": "Run",
+    "JUnit.SalesTest.executor": "Run",
+    "JUnit.SalesTest.itAddsProductToCart.executor": "Run",
+    "JUnit.SalesTest.itShowsCurrentOffer.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.App.executor": "Run",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "C:/Users/admin/Desktop/projekt aktualny/src/main/java/pl/zimmer/ecommerce/payu",
+    "last_opened_file_path": "C:/Users/admin/Desktop/pp4",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.build.tools.auto.reload": "ALL",
+    "settings.editor.selected.configurable": "build.tools",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="pl.zimmer.ecommerce.payu" />
+      <recent name="pl.zimmer.payu" />
       <recent name="pl.zimmer.ecommerce.sales" />
       <recent name="pl.zimmer.ecommerce.sales.reservation" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="pl.zimmer.ecommerce.payu" />
       <recent name="pl.zimmer.ecommerce.sales.offering" />
       <recent name="pl.zimmer.ecommerce.sales.cart" />
     </key>
@@ -173,6 +177,8 @@
       <workItem from="1717170541093" duration="14592000" />
       <workItem from="1717246852790" duration="5925000" />
       <workItem from="1717256508637" duration="3350000" />
+      <workItem from="1717518933632" duration="5167000" />
+      <workItem from="1719933336262" duration="17491000" />
     </task>
     <servers />
   </component>

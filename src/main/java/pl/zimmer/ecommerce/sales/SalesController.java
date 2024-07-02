@@ -15,7 +15,7 @@ public class SalesController {
     }
 
     @PostMapping("/api/add-product/{productId}")
-    void addProduct (@PathVariable("productId") String productId){
+    void addProduct (@PathVariable(name = "productId") String productId){
         String customerId = getCurrentCustomer();
         sales.addProductToCart(customerId, productId);
     }

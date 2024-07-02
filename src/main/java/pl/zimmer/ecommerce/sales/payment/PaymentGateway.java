@@ -1,5 +1,5 @@
 package pl.zimmer.ecommerce.sales.payment;
 
 public interface PaymentGateway {
-    PaymentDatails registerPayment(RegisterPaymentRequest registerPaymentRequest);
+    PaymentDetails registerPayment(RegisterPaymentRequest registerPaymentRequest);
 }

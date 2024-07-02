@@ -1,6 +1,6 @@
 package pl.zimmer.ecommerce.sales.reservation;
 
-import pl.zimmer.ecommerce.sales.payment.PaymentDatails;
+import pl.zimmer.ecommerce.sales.payment.PaymentDetails;
 import pl.zimmer.ecommerce.sales.payment.PaymentGateway;
 import pl.zimmer.ecommerce.sales.payment.RegisterPaymentRequest;
 
@@ -13,9 +13,9 @@ public class SpyPaymentGateway implements PaymentGateway {
     }
 
     @Override
-    public PaymentDatails registerPayment(RegisterPaymentRequest registerPaymentRequest) {
+    public PaymentDetails registerPayment(RegisterPaymentRequest registerPaymentRequest) {
         this.requestConut++;
         lastRequest = registerPaymentRequest;
-        return new PaymentDatails("http://spy-gateway/%s");
+        return new PaymentDetails("http://spy-gateway/%s");
     }
 }

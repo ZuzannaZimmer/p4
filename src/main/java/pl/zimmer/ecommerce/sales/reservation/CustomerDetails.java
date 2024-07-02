@@ -4,15 +4,15 @@ import java.math.BigDecimal;
 
 public class CustomerDetails {
     private final String customerId;
-    private final String firstname;
-    private final String lastname;
+    private final String firstName;
+    private final String lastName;
     private final String email;
 
-    public CustomerDetails(String customerId, String firstname, String lastname, String email) {
+    public CustomerDetails(String customerId, String firstName, String lastName, String email) {
 
         this.customerId = customerId;
-        this.firstname = firstname;
-        this.lastname = lastname;
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.email = email;
     }
 
@@ -20,23 +20,16 @@ public class CustomerDetails {
         return customerId;
     }
 
-    public String getFirstname() {
-        return firstname;
-    }
-
-    public String getLastname() {
-        return lastname;
-    }
-
     public String getFirstName() {
-        return null;
+        return firstName;
     }
 
     public String getLastName() {
-        return null;
+        return lastName;
     }
 
     public String getEmail() {
-        return null;
+        return email;
     }
 }
+

@@ -1,9 +1,9 @@
 package pl.zimmer.ecommerce.sales.payment;
 
-public class PaymentDatails {
+public class PaymentDetails {
     private final String url;
 
-    public PaymentDatails(String url) {
+    public PaymentDetails(String url) {
 
         this.url = url;
     }
