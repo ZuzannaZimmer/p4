@@ -1,6 +1,7 @@
 package pl.zimmer.ecommerce.catalog;
 import org.junit.jupiter.api.Test;
 
+import java.math.BigDecimal;
 import java.util.List;
 import java.util.UUID;
 
@@ -28,7 +29,7 @@ public class HashMapProductStorageTest {
     }
 
     private Product thereIsExampleProduct(){
-        var p = new Product(UUID.randomUUID(),EXAMPLE_PRODUCT_NAME,"some des");
+        var p = new Product(UUID.randomUUID(),EXAMPLE_PRODUCT_NAME,"some des", BigDecimal.valueOf(300));
         return p;
     }
 

@@ -11,6 +11,8 @@ import pl.zimmer.ecommerce.sales.offering.OfferCalculator;
 import pl.zimmer.ecommerce.sales.SalesFacade;
 import pl.zimmer.ecommerce.sales.reservation.ReservationRepository;
 
+import java.math.BigDecimal;
+
 @SpringBootApplication
 public class App {
     public static void main (String[] args) {
@@ -31,8 +33,9 @@ public class App {
     @Bean
     ProductCatalog createMyCatalog() {
         var catalog = new ProductCatalog(new ArrayListProductStorage());
-        catalog.addProduct("Lego set 8083","nice one ");
-        catalog.addProduct("Cobi bricks","nice one ");
+        catalog.addProduct("Lego set 8083","nice one ", BigDecimal.valueOf(300));
+        catalog.addProduct("Cobi bricks","nice one ", BigDecimal.valueOf(300));
+        catalog.addProduct("Lego set 11031", "nice one", BigDecimal.valueOf(300));
 
         return catalog;
     }

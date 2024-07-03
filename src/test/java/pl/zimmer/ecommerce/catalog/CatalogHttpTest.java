@@ -9,6 +9,8 @@ import org.springframework.boot.test.web.server.LocalServerPort;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
+import java.math.BigDecimal;
+
 @SpringBootTest(
         webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT
 )
@@ -25,7 +27,7 @@ public class CatalogHttpTest {
     @Test
     void itLoadsEcommerceHomepage() {
         var url = String.format("http://localhost:%s/api/products", port);
-        catalog.addProduct("My example Product", "ex description");
+        catalog.addProduct("My example Product", "ex description", BigDecimal.valueOf(300));
 
         ResponseEntity<Product[]> response = http.getForEntity(url, Product[].class);
 

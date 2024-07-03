@@ -27,7 +27,7 @@ public class ProductCatalogTest {
     @Test
     void itAllowsToAddProducts() {
         ProductCatalog catalog = createProductCatalog();
-        catalog.addProduct("Lego set 8833","Nice one");
+        catalog.addProduct("Lego set 8833","Nice one", BigDecimal.valueOf(300));
 
         List<Product> productList = catalog.allProducts();
         assertThat(productList)
@@ -37,7 +37,7 @@ public class ProductCatalogTest {
     @Test
     void itLoadsProductDetails() {
         ProductCatalog catalog = createProductCatalog();
-        String id = catalog.addProduct("Lego set 8833","Nice one");
+        String id = catalog.addProduct("Lego set 8833","Nice one", BigDecimal.valueOf(300));
 
         Product loadedProduct = catalog.getProductBy(id);
         assertThat(id).isEqualTo(loadedProduct.getId());
@@ -46,7 +46,7 @@ public class ProductCatalogTest {
     @Test
     void itAllowsToChangePrice() {
         ProductCatalog catalog = createProductCatalog();
-        String id = catalog.addProduct("Lego set 8833","Nice one");
+        String id = catalog.addProduct("Lego set 8833","Nice one", BigDecimal.valueOf(300));
 
         catalog.changePrice(id, BigDecimal.valueOf(10.10));
 

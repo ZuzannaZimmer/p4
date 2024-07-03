@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="441a9ccb-2b8c-428d-942b-11be8067d808" name="Changes" comment="" />
+    <list default="true" id="441a9ccb-2b8c-428d-942b-11be8067d808" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/zimmer/ecommerce/sales/offering/Offer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/zimmer/ecommerce/sales/offering/Offer.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,11 +22,6 @@
         <option value="Class" />
       </list>
     </option>
-  </component>
-  <component name="JavaAutoRunManager">
-    <enabled-run-configurations>
-      <run-configuration type="JUnit" name="OfferCalculatorTest.everyThirdProductIsFree" />
-    </enabled-run-configurations>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -43,6 +43,7 @@
     "JUnit.OfferCalculatorTest.everyThirdProductIsFree.executor": "Run",
     "JUnit.OfferCalculatorTest.executor": "Run",
     "JUnit.OfferCalculatorTest.zeroOfferForEmptyItems.executor": "Run",
+    "JUnit.ProductCatalogTest.itAllowsToChangePrice.executor": "Run",
     "JUnit.SalesHttpTest.itAllowsToAcceptOfferHappyPath.executor": "Run",
     "JUnit.SalesTest.executor": "Run",
     "JUnit.SalesTest.itAddsProductToCart.executor": "Run",
@@ -127,17 +128,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OfferCalculatorTest.everyThirdProductIsFree" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductCatalogTest.itAllowsToChangePrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CreditCard" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.zimmer.ecommerce.sales.offering.*" />
+          <option name="PATTERN" value="pl.zimmer.ecommerce.catalog.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="pl.zimmer.ecommerce.sales.offering" />
-      <option name="MAIN_CLASS_NAME" value="pl.zimmer.ecommerce.sales.offering.OfferCalculatorTest" />
-      <option name="METHOD_NAME" value="everyThirdProductIsFree" />
+      <option name="PACKAGE_NAME" value="pl.zimmer.ecommerce.catalog" />
+      <option name="MAIN_CLASS_NAME" value="pl.zimmer.ecommerce.catalog.ProductCatalogTest" />
+      <option name="METHOD_NAME" value="itAllowsToChangePrice" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -159,10 +160,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.App" />
+        <item itemvalue="JUnit.ProductCatalogTest.itAllowsToChangePrice" />
         <item itemvalue="JUnit.OfferAcceptanceTest.itAllowsToAcceptAnOffer" />
         <item itemvalue="JUnit.OfferAcceptanceTest" />
         <item itemvalue="JUnit.OfferCalculatorTest" />
-        <item itemvalue="JUnit.OfferCalculatorTest.everyThirdProductIsFree" />
       </list>
     </recent_temporary>
   </component>

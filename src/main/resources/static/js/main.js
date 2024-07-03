@@ -28,8 +28,8 @@ const refreshOffer = (offer) => {
     const offerTotalEl = document.querySelector("#offerTotal");
     const offerItemsCountEl = document.querySelector("#offerItemsCount");
 
-    offerTotalEl.textContent = offer.total;
-    offerItemsCountEl.textContent = offer.itemsCount;
+    offerTotalEl.textContent = `${offer.total} PLN`;
+    offerItemsCountEl.textContent = `${offer.itemsCount} Items`;
 }
 
 const createProductHtmlEl = (productData) => {

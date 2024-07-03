@@ -82,7 +82,7 @@ public class SqlTest {
 
     @Test
     void itInsertDynamicElement(){
-        var product = new Product(UUID.randomUUID(),"Ex 1","Nice one");
+        var product = new Product(UUID.randomUUID(),"Ex 1","Nice one", BigDecimal.valueOf(300));
         product.changePrice(BigDecimal.valueOf(111.11));
 
         var sql = """
@@ -131,7 +131,8 @@ public class SqlTest {
                     var loaded = new Product(
                             UUID.randomUUID(),
                             rs.getString("NAME"),
-                            rs.getString("DESCRIPTION")
+                            rs.getString("DESCRIPTION"),
+                            BigDecimal.valueOf(300)
                     );
                     loaded.changePrice(rs.getBigDecimal("PRICE"));
                     return loaded;
