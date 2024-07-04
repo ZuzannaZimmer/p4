@@ -34,6 +34,6 @@ In this workshop, we are building an E-Commerce application from the ground up. 
 - **PayU API**
 - **H2 Database**
 
-We hope this project provides valuable insights and practical experience in modern software development practices. The project is a work in progress, and contributions and feedback are welcome.
+I hope this project provides valuable insights and practical experience in modern software development practices. The project is a work in progress, and contributions and feedback are welcome.
 
 
